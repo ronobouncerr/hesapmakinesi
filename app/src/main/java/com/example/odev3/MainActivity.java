@@ -68,11 +68,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (islemler.isEmpty() || islemler.endsWith("+") || islemler.endsWith("-") || islemler.endsWith("x") || islemler.endsWith("/")){
                     islemler+= "0";
-                } else if (islemler.equals(0)){
+                } else if (islemler.equals("0")) {
                     islemler = "0";
                 } else {
                     islemler += "0";
                 }
+                binding.etSayiGiris.setText(islemler);
             }
         });
 
